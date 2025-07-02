@@ -1,0 +1,179 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.button02 {
+  background-color: #fff;
+  border: solid 2px #2f4f4f;
+  color: #2f4f4f;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.button02:hover {
+  color: #2f4f4f;
+  background-color: #b0e0e6;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+/* Q1.html用 */
+
+/* Q1.html用 */
+
+#startMessage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 9999;
+  margin: 0;
+  user-select: none;
+  text-align: center;
+}
+
+#answerInput {
+  font-size: 1em;
+  padding: 5px 10px;
+  width: 250px;
+}
+
+#submitAnswer {
+  font-size: 1em;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+#textDisplay {
+  font-size: clamp(20px, 3vw, 32px);
+  margin: 5px 0 2px 0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.2;
+  user-select: none;
+  padding: 0;
+}
+
+#manualInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 2px;
+}
+
+#textPart1 {
+  margin-right: 0.3em;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+#textPart2 {
+  margin-left: 0.3em;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+#boxContainer {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(2, 220px);
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* タイマーとの間にスペースを追加 */
+}
+
+.box {
+  width: 200px;
+  height: 220px;
+  border: 2px solid #666;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+  cursor: default;
+}
+
+.box img {
+  width: 160px;
+  height: 160px;
+  margin-top: 10px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.box .label {
+  margin-top: 12px;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  word-break: break-word;
+  padding: 0 8px;
+  user-select: text;
+}
+
+#timerDisplay {
+  text-align: center;
+  font-size: 4em; /* 大きく表示 */
+  font-weight: bold;
+  color: black; /* 黒文字 */
+  margin-top: 20px; /* ボックスからの距離 */
+}
